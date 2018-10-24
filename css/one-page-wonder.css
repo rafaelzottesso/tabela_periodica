@@ -155,6 +155,34 @@ footer.sticky {
   font-size: 75%;
 }
 
+#tabela-periodica .Alkali{
+  background-color: #FFD558;
+}
+
+#tabela-periodica .Alkaline{
+  background-color: #FFFF69;
+}
+
+#tabela-periodica .Transition{
+  background-color: #E3C7C7;
+}
+
+#tabela-periodica .Poor{
+  background-color: #AAE2D4;
+}
+
+#tabela-periodica .Metalloid{
+  background-color: #88E197;
+}
+
+#tabela-periodica .Nonmetal{
+  background-color: #40FF40;
+}
+
+#tabela-periodica .Noble{
+  background-color: #8AD3FF;
+}
+
 
 #myModalContent strong, #myModalContent acronym,
 #myModalContent em, #myModalContent i{
