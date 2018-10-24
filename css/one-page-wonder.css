@@ -128,3 +128,11 @@ footer.sticky {
 .space-sticky-footer{
   padding-bottom: 150px !important;
 }
+
+#tabela-periodica small{
+  display: none;
+}
+
+#tabela-periodica td:hover, #tabela-periodica th:hover{
+  background: #ECECEC;
+}
