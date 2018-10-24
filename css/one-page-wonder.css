@@ -136,3 +136,18 @@ footer.sticky {
 #tabela-periodica td:hover, #tabela-periodica th:hover{
   background: #ECECEC;
 }
+
+#tabela-periodica strong, #tabela-periodica acronym,
+#tabela-periodica em, #tabela-periodica i{
+    display: block;
+}
+#tabela-periodica strong{
+  font-size: 75%;
+}
+#tabela-periodica acronym{
+  font-size: 140%;
+  font-weight: bold;
+}
+#tabela-periodica i{
+  font-size: 75%;
+}
