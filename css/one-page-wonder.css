@@ -141,13 +141,26 @@ footer.sticky {
 #tabela-periodica em, #tabela-periodica i{
     display: block;
 }
+
 #tabela-periodica strong{
   font-size: 75%;
 }
+
 #tabela-periodica acronym{
   font-size: 140%;
   font-weight: bold;
 }
+
 #tabela-periodica i{
   font-size: 75%;
+}
+
+
+#myModalContent strong, #myModalContent acronym,
+#myModalContent em, #myModalContent i{
+    display: block;
+}
+
+#myModalContent{
+  font-size: 140%;
 }
