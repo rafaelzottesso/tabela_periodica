@@ -133,6 +133,29 @@ footer.sticky {
   display: none;
 }
 
+/* #tabela-periodica thead td{
+  display: inline-flex;
+  width: 80px;
+} */
+
+#tabela-periodica td, #tabela-periodica th{
+  padding: 3px;
+  /* display: inline-block;
+  width: 80px;
+  height: 80px; */
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+#tabela-periodica td div{
+  display: inline-block;
+  width: 60px;
+}
+
+#tabela-periodica td div:hover{
+
+}
+
 #tabela-periodica td:hover, #tabela-periodica th:hover{
   background: #ECECEC;
 }
@@ -147,8 +170,12 @@ footer.sticky {
 }
 
 #tabela-periodica acronym{
-  font-size: 140%;
+  font-size: 130%;
   font-weight: bold;
+}
+
+#tabela-periodica em{
+  font-size: 75%;
 }
 
 #tabela-periodica i{
