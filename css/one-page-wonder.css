@@ -5,7 +5,8 @@
  */
 
 body {
-  font-family: 'Lato';
+  font-family: 'Roboto';
+  /*font-family: 'Lato';*/
 }
 
 h1,
@@ -129,9 +130,6 @@ footer.sticky {
   padding-bottom: 150px !important;
 }
 
-#tabela-periodica small{
-  display: none;
-}
 
 /* #tabela-periodica thead td{
   display: inline-flex;
@@ -149,7 +147,9 @@ footer.sticky {
 
 #tabela-periodica td div{
   display: inline-block;
-  width: 60px;
+  width: 56px;
+  height: 61px;
+  line-height: normal;
 }
 
 #tabela-periodica td div:hover{
@@ -160,26 +160,38 @@ footer.sticky {
   background: #ECECEC;
 }
 
+#tabela-periodica small{
+  display: none;
+}
+
 #tabela-periodica strong, #tabela-periodica acronym,
 #tabela-periodica em, #tabela-periodica i{
     display: block;
 }
 
-#tabela-periodica strong{
-  font-size: 75%;
-}
-
-#tabela-periodica acronym{
-  font-size: 130%;
-  font-weight: bold;
-}
-
-#tabela-periodica em{
-  font-size: 75%;
+#tabela-periodica em {
+  font-style: normal;
+  font-size: 60%;
 }
 
 #tabela-periodica i{
-  font-size: 75%;
+  font-style: normal;
+  font-size: 55%;
+}
+
+#tabela-periodica strong{
+  font-size: 70%;
+}
+
+#tabela-periodica acronym{
+  font-size: 125%;
+  font-weight: bold;
+}
+
+#tabela-periodica .Lanthanoid,
+#tabela-periodica .Actinoid{
+  font-size: 85%;
+  text-align: center;
 }
 
 #tabela-periodica .Alkali{
