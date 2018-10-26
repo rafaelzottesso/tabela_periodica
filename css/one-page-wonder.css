@@ -231,3 +231,8 @@ footer.sticky {
 #myModalContent{
   font-size: 140%;
 }
+
+#canvasLeft, #canvasRight{
+  display: block;
+  margin: 10px auto;
+}

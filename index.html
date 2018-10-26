@@ -118,6 +118,7 @@
 <!-- Início do conteúdo -->
 <section>
   <div class="container-fluid p-5">
+
     <div class="row">
 
       <div class="col-lg">
@@ -305,6 +306,22 @@
 
     </div>
 
+    <div class="row">
+
+      <div class="col-lg">
+
+        <canvas class="border" width="480" height="480" id="canvasLeft"></canvas>
+
+      </div>
+
+      <div class="col-lg">
+
+        <canvas class="border" width="480" height="480" id="canvasRight"></canvas>
+
+      </div>
+
+    </div>
+
 
   </div>
 
@@ -346,6 +363,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/popper.js"></script>
 <script src="js/bootstrap.js"></script>
+<!-- Biblioteca para desenho -->
+<script src="js/jcanvas.min.js"></script>
 
 <!-- Só existe para garantir que o bloco js vai ser executado
 depois de importar as bibliotecas -->
@@ -356,7 +375,22 @@ $(document).ready(function() {
     var invoker = $(e.relatedTarget);
     $("#myModalContent").html( $(invoker).html() );
     $("#myModalTitle").text( $("#myModalContent em").text() );
+
+    var x = $("#myModalContent i").text().replace('(', '').replace(')', '');
+    var x = parseInt(x);
+
+    // Draw a full circle
+    $('#canvasLeft').drawArc({
+      strokeStyle: '#000',
+      strokeWidth: 5,
+      x: 240, y: 240,
+      radius: x
+    });
+
+
   });
+
+
 
 
 });
