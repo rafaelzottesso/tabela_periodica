@@ -372,20 +372,38 @@ depois de importar as bibliotecas -->
 $(document).ready(function() {
 
   $('#myModal').on('show.bs.modal', function (e) {
+
+    var canvas = $('#canvasLeft')[0]; // or document.getElementById('canvas');
+    canvas.width = canvas.width;
+
     var invoker = $(e.relatedTarget);
     $("#myModalContent").html( $(invoker).html() );
+
     $("#myModalTitle").text( $("#myModalContent em").text() );
 
     var x = $("#myModalContent i").text().replace('(', '').replace(')', '');
     var x = parseInt(x);
 
-    // Draw a full circle
-    $('#canvasLeft').drawArc({
-      strokeStyle: '#000',
-      strokeWidth: 5,
-      x: 240, y: 240,
-      radius: x
-    });
+     var camadas = $("#myModalContent small").html().split("<br>");
+
+     var tamanho = 0;
+
+     $.each(camadas, function(index, value){
+
+       tamanho = tamanho + parseInt(value*2);
+
+       // alert(tamanho);
+
+       // Draw a full circle
+       $('#canvasLeft').drawArc({
+         strokeStyle: '#bbbbbb',
+         strokeWidth: 1,
+         x: 240, y: 240,
+         radius: tamanho
+       });
+
+       // alert(value);
+     });
 
 
   });
